@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_ffffff"
+    android:orientation="vertical"
+    tools:context="com.onairm.recordtool4android.activity.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/fContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/color_f1f1f1" />
+
+        <RadioGroup
+            android:id="@+id/mRadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/tabOne"
+                style="@style/MTabStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:drawableTop="@drawable/tab_one_image"
+                android:text="录制"
+                android:textColor="@drawable/tab_text_color"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/tabTwo"
+                style="@style/MTabStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/tab_two_image"
+                android:text="我的视频"
+                android:textColor="@drawable/tab_text_color"
+                android:textSize="12sp"/>
+        </RadioGroup>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="dialogUpdate" parent="android:style/Theme.Dialog">
+        <item name="android:background">#00000000</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+    <declare-styleable name="TvRecyclerView">
+        <attr name="android:orientation" tools:ignore="ResourceName"/>
+        <attr name="tv_layoutManager" format="string"/>
+        <attr name="tv_numColumns" format="integer"/>
+        <attr name="tv_numRows" format="integer"/>
+        <attr name="tv_laneCountsStr" format="string"/>
+        <attr name="tv_isIntelligentScroll" format="boolean"/>
+        <attr name="tv_selectedItemOffsetStart" format="dimension"/>
+        <attr name="tv_selectedItemOffsetEnd" format="dimension"/>
+        <attr name="tv_selectedItemIsCentered" format="boolean"/>
+        <attr name="tv_isMenu" format="boolean"/>
+        <attr name="tv_isSelectFirstVisiblePosition" format="boolean"/>
+        <attr name="tv_loadMoreBeforehandCount" format="integer"/>
+        <attr name="tv_optimizeLayout" format="boolean"/>
+    </declare-styleable>
+</resources>

@@ -1,0 +1,4 @@
+网络请求使用retrofit+rxjava的方式，使用方法：
+1、初始化（在baselibrary的Init中），在初始化的时候需要传入baseUrl以及基础参数;
+2、调用的时候先要在公共interface注册一下，然后新建继承了BaseApi的Api;
+3、在网络请求的地方新建自定义api然后调用httpManager.doHttpDeal(自定义api);
